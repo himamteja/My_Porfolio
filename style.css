@@ -1687,7 +1687,7 @@ footer:last-of-type {
     font-size: 1.2rem;
   }
   .hero {
-    height: 155vh;
+    height: 160vh;
   }
   .welcome-line {
     margin-top: 5px;
@@ -1757,3 +1757,4 @@ footer:last-of-type {
     position: relative;
   }
 }
+
