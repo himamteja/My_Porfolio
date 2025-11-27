@@ -1686,6 +1686,9 @@ footer:last-of-type {
   .logo {
     font-size: 1.2rem;
   }
+  .hero {
+    height: 150vh;
+  }
   .hamburger {
     display: flex;
   }
@@ -1751,3 +1754,4 @@ footer:last-of-type {
     position: relative;
   }
 }
+
