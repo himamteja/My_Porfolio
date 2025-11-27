@@ -1686,12 +1686,12 @@ footer:last-of-type {
   .logo {
     font-size: 1.2rem;
   }
-  .hero {
+  /* .hero {
     height: 165vh;
   }
   .welcome-line {
     margin-top: 5px;
-  }
+  } */
   .hamburger {
     display: flex;
   }
@@ -1757,5 +1757,6 @@ footer:last-of-type {
     position: relative;
   }
 }
+
 
 
