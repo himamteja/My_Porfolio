@@ -1,0 +1,62 @@
+.cursor-icons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 50px;
+}
+
+.cursor-icons .icon {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  background: #8a8282;
+  color: #fff;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.cursor-icons .icon:hover {
+  background: #444;
+  transform: scale(1.1);
+}
+
+.cursor-icons .icon.active {
+  background: #ff008c;
+  transform: scale(1.15);
+}
+
+/* Snake containers */
+#rainbow-snake,
+#neon-snake {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Rainbow dots */
+.rainbow-dot {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+/* Neon dots */
+.neon-dot {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: #00eaff;
+  box-shadow: 0 0 12px #00eaff, 0 0 22px #00eaff;
+  opacity: 0.9;
+}
