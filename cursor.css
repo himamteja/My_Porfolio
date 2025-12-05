@@ -60,3 +60,40 @@
   box-shadow: 0 0 12px #00eaff, 0 0 22px #00eaff;
   opacity: 0.9;
 }
+
+/* =========================== */
+
+#tap-effects {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.tap-circle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: tapRipple 0.6s ease-out forwards;
+}
+
+@keyframes tapRipple {
+  0% {
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(5);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .cursor-icons {
+    display: none !important;
+  }
+}
+
