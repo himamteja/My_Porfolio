@@ -118,3 +118,33 @@ document.querySelectorAll(".cursor-icons .icon").forEach((icon) => {
 updateCursor("rainbow");
 
 // ==========================
+
+if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+  document.body.style.cursor = "auto";
+  document.getElementById("rainbow-snake").style.display = "none";
+  document.getElementById("neon-snake").style.display = "none";
+}
+
+// =====================
+
+// Detect mobile device
+const isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
+
+if (isMobile) {
+  const container = document.getElementById("tap-effects");
+
+  document.addEventListener("touchstart", function (e) {
+    const touch = e.touches[0];
+
+    const circle = document.createElement("div");
+    circle.className = "tap-circle";
+
+    circle.style.left = touch.clientX + "px";
+    circle.style.top = touch.clientY + "px";
+
+    container.appendChild(circle);
+
+    setTimeout(() => circle.remove(), 600);
+  });
+}
+
