@@ -148,3 +148,7 @@ buttons.forEach((btn) => {
     });
   });
 });
+// Show Courses certificates on first load
+document.querySelector('.cert-btn[data-category="courses"]').click();
+
+
