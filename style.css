@@ -1712,6 +1712,7 @@ footer:last-of-type p {
     padding: 40px 20px;
     text-align: center;
     /* height: 150vh; */
+    margin-top: 20px;
   }
   .hero-content {
     flex-direction: column;
@@ -1862,6 +1863,7 @@ footer:last-of-type p {
     position: relative;
   }
 }
+
 
 
 
