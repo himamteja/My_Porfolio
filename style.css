@@ -1711,7 +1711,7 @@ footer:last-of-type p {
   .hero {
     padding: 40px 20px;
     text-align: center;
-    height: 100vh;
+    /* height: 100vh; */
     /* margin-top: 20px; */
   }
   .hero-content {
@@ -1863,6 +1863,7 @@ footer:last-of-type p {
     position: relative;
   }
 }
+
 
 
 
