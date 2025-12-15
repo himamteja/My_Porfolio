@@ -146,6 +146,7 @@ header {
   color: #fff;
   text-align: left;
   font-family: "Poppins", sans-serif;
+  overflow: visible;
 }
 
 .overlay {
@@ -2007,3 +2008,4 @@ project media queries
     position: relative;
   }
 }
+
