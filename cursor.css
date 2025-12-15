@@ -165,3 +165,107 @@
   opacity: 0.6;
 }
 
+/* =============================
+   FLOATING ACTION BUTTON
+============================== */
+/* ================= FAB CONTAINER ================= */
+.fab-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  z-index: 99999; /* 🔥 Always on top */
+  isolation: isolate; /* 🔥 Prevent stacking issues */
+}
+
+/* ================= COMMON FAB STYLE ================= */
+.fab {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: #ff9800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  transition: all 0.35s ease;
+}
+
+/* ================= MAIN BUTTON ================= */
+.main-btn {
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  line-height: 1;
+  padding: 0;
+  color: #fff;
+}
+
+/* ================= CHILD BUTTONS ================= */
+.child {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0);
+}
+
+/* ================= ICON IMAGES ================= */
+.child img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  filter: brightness(1.1);
+  display: block;
+}
+
+/* ================= BRAND COLORS ================= */
+.instagram {
+  background: #e1306c;
+}
+.github {
+  background: #b8a8a8;
+}
+.linkedin {
+  background: #0a66c2;
+}
+
+/* ================= ACTIVE STATE ================= */
+.fab-container.active .child {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ================= ANIMATION ORDER ================= */
+.fab-container.active .child:nth-child(2) {
+  transform: translateY(-70px);
+}
+.fab-container.active .child:nth-child(3) {
+  transform: translateY(-140px);
+}
+.fab-container.active .child:nth-child(4) {
+  transform: translateY(-210px);
+}
+
+/* ================= HOVER EFFECT ================= */
+.fab:hover {
+  transform: scale(1.08);
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-height: 650px) {
+  .fab-container {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .fab-container.active .child:nth-child(4) {
+    transform: translateY(-180px);
+  }
+}
+
+
+
