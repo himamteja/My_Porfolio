@@ -198,4 +198,14 @@ function drawWaves() {
 
 drawWaves();
 
+/* =============================
+FLOATING ACTION BUTTON
+============================== */
+
+const fab = document.querySelector(".fab-container");
+document.getElementById("fabToggle").onclick = () => {
+  fab.classList.toggle("active");
+};
+
 // ==============================
+
