@@ -823,12 +823,13 @@
       <div class="contact-container">
         <!-- Left: Form -->
         <div class="contact-form">
-          <form action="#" method="post">
+          <form action="https://formspree.io/f/mojaapgz" method="post">
             <label for="name">Your Name</label>
             <input
               type="text"
               id="name"
               name="name"
+              autocomplete="name"
               placeholder="What's your good name?"
               required
             />
@@ -838,6 +839,7 @@
               type="email"
               id="email"
               name="email"
+              autocomplete="email"
               placeholder="What's your email address?"
               required
             />
@@ -846,6 +848,7 @@
             <textarea
               id="message"
               name="message"
+              autocomplete="off"
               placeholder="How can I help you?"
               rows="5"
               required
@@ -977,5 +980,6 @@
     </script>
   </body>
 </html>
+
 
 
