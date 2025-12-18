@@ -75,8 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      alert(`✅ Thank you, ${name}! Your message has been sent successfully.`);
-      contactForm.reset();
+      // alert(`✅ Thank you, ${name}! Your message has been sent successfully.`);
+      contactForm.submit();
     });
   }
 
@@ -150,5 +150,6 @@ buttons.forEach((btn) => {
 });
 // Show Courses certificates on first load
 document.querySelector('.cert-btn[data-category="courses"]').click();
+
 
 
