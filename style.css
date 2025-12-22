@@ -582,6 +582,15 @@ header {
 #skill-card9 {
   animation-delay: 2.4s;
 }
+#skill-card10 {
+  animation-delay: 2.7s;
+}
+#skill-card11 {
+  animation-delay: 3s;
+}
+#skill-card12 {
+  animation-delay: 3.3s;
+}
 
 /* ==== NEON BORDER COLORS ==== */
 .border-red {
@@ -639,6 +648,9 @@ header {
 }
 .border-pink:hover {
   box-shadow: 0 0 25px rgba(255, 0, 170, 0.7);
+}
+.border-black:hover {
+  box-shadow: 0 0 25px rgba(214, 203, 203, 0.7);
 }
 
 /* FLOAT ANIMATION */
@@ -2008,4 +2020,5 @@ project media queries
     position: relative;
   }
 }
+
 
