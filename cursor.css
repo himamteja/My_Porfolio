@@ -378,31 +378,12 @@
 #question-box10 {
   animation-delay: 2.7s;
 }
-#skill-card3 {
-  animation-delay: 0.6s;
+#question-box11 {
+  animation-delay: 3.0s;
 }
-#skill-card4 {
-  animation-delay: 0.9s;
+#question-box12 {
+  animation-delay: 3.3s;
 }
-#skill-card5 {
-  animation-delay: 1.2s;
-}
-#skill-card6 {
-  animation-delay: 1.5s;
-}
-#skill-card7 {
-  animation-delay: 1.8s;
-}
-#skill-card8 {
-  animation-delay: 2.1s;
-}
-#skill-card9 {
-  animation-delay: 2.4s;
-}
-#skill-card10 {
-  animation-delay: 2.7s;
-}
-
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -449,6 +430,7 @@
     font-size: 2rem;
   }
 }
+
 
 
 
